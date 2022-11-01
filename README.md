@@ -26,7 +26,9 @@ Basic example of using Cypress and Browserstack with Javascript.
 # Overview
 
 Run [todo.cy.js](https://github.com/cypress-io/cypress-example-kitchensink/blob/master/cypress/e2e/1-getting-started/todo.cy.js)
-Cypress example using Cypress locally and Browserstack.
+Cypress example using Cypress locally and [Browserstack](https://www.browserstack.com/).
+
+The objective of using Browserstack is to run the tests with Chrome and Edge latest version on Windows 10.
 
 # How to run the tests
 
