@@ -4,10 +4,10 @@
   "description": "Cypress + Browserstack + Javascript",
   "scripts": {
     "pretest": "rm -rf cypress/{downloads,screenshots,videos}",
-    "cypress:test": "export $(grep -v '^#' .env | xargs) && cypress run",
-    "browserstack:test": "export $(grep -v '^#' .env | xargs) && browserstack-cypress run",
+    "test": "export $(grep -v '^#' .env | xargs) && cypress run",
     "cypress:open": "export $(grep -v '^#' .env | xargs) && cypress open",
-    "lint": "eslint . --ext .js,.json",
+    "browserstack:test": "export $(grep -v '^#' .env | xargs) && browserstack-cypress run",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
   },
   "keywords": [
@@ -23,14 +23,18 @@
     "url": "https://github.com/eccanto"
   },
   "license": "MIT",
+  "dependencies": {
+    "browserstack-cypress-cli": "^1.21.0",
+    "cypress": "^12.9.0"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "cypress": "^10.7.0",
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsonc": "^2.0.0",
+    "eslint": "^8.37.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-cypress": "^2.13.2",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsonc": "^2.7.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.1"
+    "eslint-plugin-promise": "^6.1.1"
   }
 }

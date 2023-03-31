@@ -43,7 +43,7 @@ npm install
 ### Running tests
 
 ```bash
-npm run cypress:test
+npm test
 ```
 
 ![Cypress test](documentation/images/cypress-test.png)
@@ -60,12 +60,6 @@ npm run cypress:open
 
 ## Browserstack
 
-## Installation
-
-```bash
-npm install -g browserstack-cypress-cli
-```
-
 ### Configuration
 
 An `.env` file is required in the project base directory, this file will contain the Browserstack credentials.
@@ -75,7 +69,6 @@ An `.env` file is required in the project base directory, this file will contain
 
 BROWSERSTACK_USERNAME=<BROWSERSTACK_USERNAME>
 BROWSERSTACK_ACCESS_KEY=<BROWSERSTACK_ACCESS_KEY>
-
 ```
 
 How to obtain these values?:
