@@ -4,8 +4,8 @@
   "description": "Cypress + Browserstack + Javascript",
   "scripts": {
     "pretest": "rm -rf cypress/{downloads,screenshots,videos}",
-    "test": "export $(grep -v '^#' .env | xargs) && cypress run",
-    "cypress:open": "export $(grep -v '^#' .env | xargs) && cypress open",
+    "test": "cypress run",
+    "cypress:open": "cypress open",
     "browserstack:test": "export $(grep -v '^#' .env | xargs) && browserstack-cypress run",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
@@ -24,16 +24,16 @@
   },
   "license": "MIT",
   "dependencies": {
-    "browserstack-cypress-cli": "^1.21.0",
-    "cypress": "^12.9.0"
+    "browserstack-cypress-cli": "^1.28.0",
+    "cypress": "^13.6.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^8.37.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-cypress": "^2.13.2",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsonc": "^2.7.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-cypress": "^2.15.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsonc": "^2.11.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1"
   }
